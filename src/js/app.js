@@ -437,3 +437,14 @@ $(document).on('click', '#logoutButton', function () {
    localStorage.clear();
    window.location.href = $.login;
 });
+
+$(document).on('click', '#addActivity', function () {
+    $.get('views/modals/activity.html')
+        .done(function (html) {
+            $('#myModal').append(html).modal('show');
+        });
+});
+
+$('#myModal').on('hidden.bs.modal', function (e) {
+    $(this).empty();
+});

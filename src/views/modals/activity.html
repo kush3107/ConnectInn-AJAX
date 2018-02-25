@@ -1,0 +1,53 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Activity</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" placeholder="Enter title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea type="text" class="form-control" style="max-height: 100px; min-height: 100px" id="description" placeholder="Short description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="street">Street</label>
+                    <input type="text" class="form-control" id="street" placeholder="Enter street name">
+                </div>
+
+                <div class="row">
+
+                    <div class="form-group col-sm-6">
+                        <label for="start">Start</label>
+                        <input type="date" class="form-control" id="start" placeholder="Enter start date" required>
+                    </div>
+
+                    <div class="form-group col-sm-6">
+                        <label for="end">End</label>
+                        <input type="date" class="form-control" id="end" placeholder="Enter end date">
+                    </div>
+
+                </div>
+                <!--/.row-->
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-control" id="country" placeholder="Country name">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+    </div>
+    <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->

@@ -270,12 +270,15 @@
         <!-- Breadcrumb Menu-->
         <li class="breadcrumb-menu d-md-down-none">
           <div class="btn-group" role="group" aria-label="Button group">
-            <button type="button" class="btn btn-outline-primary btn-sm"><i class="icon-plus"></i> Add Activity</button>
-            <button type="button" class="btn btn-outline-primary btn-sm"><i class="icon-plus"></i> Add Education</button>
-            <button type="button" class="btn btn-outline-primary btn-sm"><i class="icon-plus"></i> Add Experience</button>
+            <button id="addActivity" type="button" class="btn btn-outline-primary btn-sm"><i class="icon-plus"></i> Add Activity</button>
+            <button id="addEducation" type="button" class="btn btn-outline-primary btn-sm"><i class="icon-plus"></i> Add Education</button>
+            <button id="addExperience" type="button" class="btn btn-outline-primary btn-sm"><i class="icon-plus"></i> Add Experience</button>
           </div>
         </li>
       </ol>
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      </div>
 
       <div class="container-fluid">
         <div id="ui-view"></div>
