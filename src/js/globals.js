@@ -39,7 +39,9 @@ var activityCard = function (activity) {
                         </div>
                     </div>
                     <div class="card-body">
-                        ${activity.description}
+                        <div class="text-center">
+                            ${activity.description}
+                        </div>
                     <hr>
                         ${membersRow(activity.members.data)}
                     </div>
