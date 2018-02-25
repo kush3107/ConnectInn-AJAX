@@ -53,7 +53,7 @@ var membersRow = function (members) {
     let html = '<h5>Members</h5><div class="row">';
     for (const member of members) {
         const url = member.profile_pic ? member.profile_pic : 'http://via.placeholder.com/350x150';
-        html += `<div class="col-3 justify-content-center">
+        html += `<div class="col-3 justify-content-center mb-1">
                     <img data-toggle="tooltip" data-placement="top" title="${member.name}" style="width: 50px; height: 50px; cursor: pointer;" src="${url}" class="rounded-circle">
                 </div>`;
     }
